@@ -1,0 +1,17 @@
+Latency in communication. A data packet’s round-trip times from an end-user to a edge device and vice versa, are calculated as follows:
+c_lat^f=c_lat^f (req)+c_lat^f (res)			(1)
+c_lat^f (req)=(dt_pkt^siz)/v_((ne,nf)) .dpk 			(2)
+c_lat^f (res)=(dt_pkt^siz)/v_((nf,ne) ) .dpkt_f^p 			(3)
+c_l^f=(dt_pkt^siz)/v_((ne,nf)) .dpkt_l^p+(dt_pkt^siz)/v_((nf,ne)) .dpkt_f^p 	(4)
+c_lat^f - the end-user device ne and edge device nf is calculated
+c_lat^f=dt_pkt^s iz.((dt_pkt^lat)/v_((ne,nf)) +(dt_pkt^f)/v_((nf,ne)) )		(5)
+c_lat^f between edge device nl and nf is defined as
+c_lat^f=dt_pkt^s iz.((dt_f^l)/v_((nl,nf) ) +(dt_f^pkt)/v_((nl,ne) ) )		(6)
+c_cmplat^f between device ne and device nl is expressed as
+c_cmplat^f=dt_pkt^s.((dt_lat^pkt)/v_((ne,nl)) +(dt_f^lat)/v_((nf,nl)) )		(7)
+The network latency computes on total data communication to and free among various devices nl, nl to edge device nf, and nf to ne by assuming the same latency for each transmission count ; the network latency is represented as
+n_lat^f=(l_l h_c*(n_l+n_f+n_e))/T_p 				(8)
+It is possible to declare the compute delay (waiting time and service time) for the edge device in conjunction with the rate of arrival of data packets as well as the rate of service provided by the edge device. This is done under the assumption of a query system and disregarding the loss of data packets and presented as follows:
+n_lat^f=(n_i.c1_i.dpkt_f^l)/(c_s^l )+(n_i.c1_i.d_f^p)/(c_s^f )+1/(v_(nl,ne)-λ_e )+1/(v_(nl,nf)-λ_f )+1/(v_(nf,nl)-λ_l )+1/(v_(nf,ne)-λ_(e^' ) )		(9)
+The total latency expressed as:
+Total_lat=c_lat^f+n_lat^f+c_cmplat^f		(10)
