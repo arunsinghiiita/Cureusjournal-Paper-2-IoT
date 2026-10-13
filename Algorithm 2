@@ -1,0 +1,25 @@
+The following algorithm 2 describes the techniques for allocation and selection of data packet in real time environment. The greedy and NN methods are used, in which greedy approach is employed for making relative decisions to reduce the delay in the approach at the instant of allocation and selection data packet.
+
+In observing rate (l_i) and reward factor (d_i), investigation factor (e_i), demand rate (d_i), incoming request fare i_i, and direction method (dv), guardian GG with a decision function df, Infant C. i = 1, 2
+
+Out Resource allotment (T) and Guardian GG with highest accomplishment.
+
+Resource allocation associated with step a and examine the following position s' and bonus r.
+
+T(s, a) ← s S ← S'
+
+iteration ← iteration + 1
+
+Do this for each iteration within a given range
+
+For p in range C do
+
+infant^(p) = guardianNN + randomnoise(n₀), [df^(i)(h) = df^(i) + noise]
+
+Evaluate
+
+Calculate Mean − reward_i
+
+Gain_i^(p) reward_i^(p) Mean − reward_i, p = 1, ⋯⋯, M
+
+Evaluate Guardian GG END
